@@ -4,15 +4,15 @@ const About = () => {
   return (
     <div
       name="About"
-      className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-800 text-white"
+      className="w-full  bg-gradient-to-b from-black via-black to-gray-800 text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full lg:h-[80vh]">
         <div className="pb-8">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             About
           </p>
         </div>
-        <p className="text-xl mt-5 justx1 ">
+        <p className="text-xl mt-5 justx1 text-justify">
           I am a passionate Software Engineer with experience in full-stack web
           development, automation, and system integration. Currently working at
           Accenture, I specialize in optimizing workflows, enhancing database
@@ -24,7 +24,7 @@ const About = () => {
           applications with a focus on user experience and business growth.
         </p>
         <br />
-        <p className="text-xl">
+        <p className="text-xl text-justify">
           Beyond my professional role, I have built multiple personal projects,
           including a fully responsive coffee-selling website with 15+ dynamic
           animations and a Python-based web scraping tool that improved data

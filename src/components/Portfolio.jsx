@@ -10,41 +10,66 @@ const Portfolio = () => {
   const portfolio = [
     {
       id: 1,
-      src:codersCoffee,
+      src: codersCoffee,
+      demo: "https://coffee-with-shiv.vercel.app/",
+      code: "https://github.com/shivanshpal31/coffeeWithShiv",
+      style: {
+        cursor: "pointer",
+      },
     },
     {
       id: 2,
       src: swimFish,
+      demo: "https://github.com/shivanshpal31/SwimFish",
+      code: "https://github.com/shivanshpal31/SwimFish",
+      style: {
+        cursor: "pointer",
+      },
     },
     {
       id: 3,
       src: textMani,
+      demo: "https://my-project-inky-seven.vercel.app/",
+      code: "https://github.com/shivanshpal31/TextManipulator",
+      style: {
+        cursor: "pointer",
+      },
     },
     {
       id: 4,
       src: webScrap,
+      demo: "",
+      code: "https://github.com/shivanshpal31/Weather_Forecast_Webscraping",
+      style: {
+        cursor: "not-allowed",
+      },
     },
     {
       id: 5,
       src: newsEra,
+      demo: "https://github.com/shivanshpal31/NewsEra",
+      code: "https://github.com/shivanshpal31/NewsEra",
+      style: {
+        cursor: "pointer",
+      },
     },
   ];
 
   return (
     <div
-      className="bg-gradient-to-b from-black via-black to-gray-800 w-full text-white md:h-screen"
+      className="w-full  bg-gradient-to-b from-black via-black to-gray-800 text-white"
       name="Portfolio"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
+        <div className="pb-8 ">
+          <p className="text-4xl font-bold border-b-4 inline border-gray-500">
             Portfolio
           </p>
           <p className="py-6">Check our some of my work right here</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 lg:pb-40 px-12 sm:px-0">
-          {portfolio.map(({ id, src }) => {
+          {portfolio.map(({ id, src, style, demo, code }) => {
             return (
               <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                 <img
@@ -53,11 +78,18 @@ const Portfolio = () => {
                   alt=""
                 />
                 <div className="flex items-center justify-center">
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110">
-                    Demo
+                  <button
+                    style={style}
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110"
+                  >
+                    <a target="_blank" rel="noreferrer" href={demo} style={style}>
+                      Demo
+                    </a>
                   </button>
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110">
-                    Code
+                    <a target="_blank" rel="noreferrer" href={code}>
+                      Code
+                    </a>
                   </button>
                 </div>
               </div>
