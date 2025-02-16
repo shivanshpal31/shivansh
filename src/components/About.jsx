@@ -9,7 +9,7 @@ const About = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full lg:h-[80vh]">
         <motion.div
-          initial={{ opacity: 0, scale: 0.1 }}
+          initial={{ opacity: 0.1, scale: 0.1 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             type: "spring",
@@ -24,7 +24,7 @@ const About = () => {
           </p>
         </motion.div>
         <motion.p
-          initial={{ opacity: 0, scale: 0.1 }}
+          initial={{ opacity: 0.1, scale: 0.1 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             type: "spring",
@@ -46,7 +46,7 @@ const About = () => {
         </motion.p>
         <br />
         <motion.p
-          initial={{ opacity: 0, scale: 0.1 }}
+          initial={{ opacity: 0.1, scale: 0.1 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             type: "spring",

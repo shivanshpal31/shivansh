@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto ">
         <div className="pb-8">
           <motion.p
-            initial={{ opacity: 0, scale: 0.1 }}
+            initial={{ opacity: 0.1, scale: 0.1 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
@@ -23,7 +23,7 @@ const Contact = () => {
             Contact
           </motion.p>
           <motion.p
-            initial={{ opacity: 0, scale: 0.1 }}
+            initial={{ opacity: 0.1, scale: 0.1 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
@@ -43,7 +43,7 @@ const Contact = () => {
             className="flex flex-col w-full md:w-1/2"
           >
             <motion.input
-              initial={{ opacity: 0, y: -120 }}
+              initial={{ opacity: 0.1, y: -120 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 type: "spring",
@@ -57,7 +57,7 @@ const Contact = () => {
               className="border-2 my-4 bg-transparent rounded-md p-2 text-white focus:outline-none"
             />
             <motion.input
-              initial={{ opacity: 0, y: -120 }}
+              initial={{ opacity: 0.1, y: -120 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 type: "spring",
@@ -71,7 +71,7 @@ const Contact = () => {
               className="border-2 my-4 bg-transparent rounded-md p-2 text-white focus:outline-none"
             />
             <motion.textarea
-              initial={{ opacity: 0, y: -120 }}
+              initial={{ opacity: 0.1, y: -120 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 type: "spring",
@@ -85,7 +85,7 @@ const Contact = () => {
               placeholder="Enter your message"
               className="border-2 my-4 bg-transparent rounded-md p-2 text-white focus:outline-none"
             />
-            <motion.button initial={{ opacity: 0, scale: 0.1 }}
+            <motion.button initial={{ opacity: 0.1, scale: 0.1 }}
              animate={{ opacity: 1, scale: 1 }}
              transition={{
                type: "spring",

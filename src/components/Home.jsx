@@ -13,7 +13,7 @@ const Home = () => {
       <div className="max-w-screen-lg text-white mx-auto lg:gap-10 flex flex-col items-center justify-center h-full py-10 lg:py-0 px-2 md:flex-row">
         <div>
           <motion.img
-            initial={{ opacity: 0, scale: 0.1 }}
+            initial={{ opacity: 0.1, scale: 0.1 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
@@ -28,7 +28,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col justify-center h-full p-10 lg:p-0 items-center lg:items-start">
           <motion.h2
-            initial={{ opacity: 0, y:-120 }}
+            initial={{ opacity: 0.1, y:-120 }}
             animate={{ opacity: 1, y:0 }}
             transition={{
               type: "spring",
@@ -41,7 +41,7 @@ const Home = () => {
             I'm Shivansh Pal
           </motion.h2>
           <motion.p
-              initial={{ opacity: 0, scale: 0.1 }}
+              initial={{ opacity: 0.1, scale: 0.1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
                 type: "spring",
@@ -57,7 +57,7 @@ const Home = () => {
             enhance performance and efficiency.
           </motion.p>
           <motion.div
-             initial={{ opacity: 0, scale: 0.1 }}
+             initial={{ opacity: 0.1, scale: 0.1 }}
              animate={{ opacity: 1, scale: 1 }}
              transition={{
                type: "spring",

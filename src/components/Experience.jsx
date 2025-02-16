@@ -69,7 +69,7 @@ export const Experience = () => {
       <div className="max-w-screen-lg mx-auto p-4 pt-0 flex flex-col justify-center w-full h-full text-white">
         <div>
           <motion.p
-            initial={{ opacity: 0, scale: 0.1 }}
+            initial={{ opacity: 0.1, scale: 0.1 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
@@ -82,7 +82,7 @@ export const Experience = () => {
             Experience
           </motion.p>
           <motion.p
-            initial={{ opacity: 0, scale: 0.1 }}
+            initial={{ opacity: 0.1, scale: 0.1 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",

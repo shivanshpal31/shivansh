@@ -68,7 +68,7 @@ const Portfolio = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
         <motion.div
-          initial={{ opacity: 0, scale: 0.1 }}
+          initial={{ opacity: 0.1, scale: 0.1 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             type: "spring",
