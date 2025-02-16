@@ -4,10 +4,10 @@ import css from "../assets/css.png";
 import javascript from "../assets/js.png";
 import reactImage from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
-import github from "../assets/github.webp"; 
+import github from "../assets/github.webp";
 import java from "../assets/java.png";
 import node from "../assets/node.png";
-
+import { motion } from "framer-motion";
 
 export const Experience = () => {
   const technologies = [
@@ -66,12 +66,34 @@ export const Experience = () => {
       name="Experience"
       className="bg-gradient-to-b from-black via-black to-gray-800 w-full h-screen"
     >
-      <div className="max-w-screen-lg mx-auto p-4 pt-px flex flex-col justify-center w-full h-full text-white">
+      <div className="max-w-screen-lg mx-auto p-4 pt-0 flex flex-col justify-center w-full h-full text-white">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+          <motion.p
+            initial={{ opacity: 0, scale: 0.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              damping: 20,
+              delay: 0.2,
+            }}
+            className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline"
+          >
             Experience
-          </p>
-          <p className="py-6">There are the technologies I've worked with</p>
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, scale: 0.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              damping: 20,
+              delay: 0.5,
+            }}
+            className="py-6"
+          >
+            There are the technologies I've worked with
+          </motion.p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
           {technologies.map(({ id, src, title, style }) => (

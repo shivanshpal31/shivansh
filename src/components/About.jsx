@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -7,12 +8,32 @@ const About = () => {
       className="w-full  bg-gradient-to-b from-black via-black to-gray-800 text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full lg:h-[80vh]">
-        <div className="pb-8">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 50,
+            damping: 20,
+            delay: 0.2,
+          }}
+          className="pb-8"
+        >
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             About
           </p>
-        </div>
-        <p className="text-xl mt-5 justx1 text-justify">
+        </motion.div>
+        <motion.p
+          initial={{ opacity: 0, scale: 0.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+            delay: 0.5,
+          }}
+          className="text-xl mt-5 justx1 text-justify"
+        >
           I am a passionate Software Engineer with experience in full-stack web
           development, automation, and system integration. Currently working at
           Accenture, I specialize in optimizing workflows, enhancing database
@@ -22,9 +43,19 @@ const About = () => {
           operations. My technical expertise spans Java, React.js, Python, SQL,
           and cloud platforms like AWS, allowing me to deliver high-performance
           applications with a focus on user experience and business growth.
-        </p>
+        </motion.p>
         <br />
-        <p className="text-xl text-justify">
+        <motion.p
+          initial={{ opacity: 0, scale: 0.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+            delay: 1.2,
+          }}
+          className="text-xl text-justify"
+        >
           Beyond my professional role, I have built multiple personal projects,
           including a fully responsive coffee-selling website with 15+ dynamic
           animations and a Python-based web scraping tool that improved data
@@ -33,7 +64,7 @@ const About = () => {
           and coding proficiency. I am always eager to explore new technologies,
           build impactful products, and contribute to innovative projects that
           make a difference.
-        </p>
+        </motion.p>
       </div>
     </div>
   );
