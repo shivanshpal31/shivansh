@@ -6,7 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 
-const Experience = () => {
+const finalizeExperience = () => {
   const experiences = [
     {
       company: "Accenture Private Solution",
@@ -37,9 +37,9 @@ const Experience = () => {
   return (
     <div
       name="Experience"
-      className="bg-gradient-to-b from-black via-black to-gray-800 w-full h-full"
+      className="bg-gradient-to-b from-black via-black to-gray-800 w-full "
     >
-      <div className="max-w-screen-lg mx-auto p-0 pt-0 flex flex-col  w-full h-full text-white">
+      <div className="max-w-screen-lg mx-auto p-4 pt-0 flex flex-col  w-full h-full text-white">
         <div>
           <motion.p
             initial={{ opacity: 0.1, scale: 0.1 }}
@@ -123,4 +123,15 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default finalizeExperience;
+
+
+// Seamless System Integration: Integrated Kinaxis with multiple systems to enable flawless data flow, resolving 95% of workflow and outbound job errors, ensuring smooth and efficient operations.
+
+// Workflow Automation: Developed automation scripts that streamlined workflows, enhancing operational efficiency by 70% and reducing manual intervention.
+
+// Customer-Centric Solutions: Addressed enterprise-level challenges with a customer-focused approach, achieving 95% satisfaction across project sections and delivering impactful results.
+
+// Database Optimization: Designed and maintained relational databases, improving query performance by 30% and ensuring 100% data integrity across all systems.
+
+// Agile-Driven Analytics: Leveraged Agile methodologies to manage project timelines and analyzed 1M+ records using Python and SQL, boosting project completion by 20% and decision-making efficiency by 25%.

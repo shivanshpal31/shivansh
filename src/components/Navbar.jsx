@@ -8,8 +8,8 @@ const Navbar = () => {
 
   const links = [
     { id: 1, link: "Home", val: "/" },
-    { id: 2, link: "About", val: "/about" },
-    { id: 3, link: "Portfolio", val: "/portfolio" },
+    { id: 2, link: "Skill Set", val: "/SkillSet" },
+    { id: 3, link: "My Work", val: "/my-Work" },
     { id: 4, link: "Experience", val: "/experience" },
     { id: 4, link: "Contact Us", val : "/contact"},
   ];

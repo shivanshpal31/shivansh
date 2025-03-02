@@ -68,12 +68,12 @@ const Home = () => {
              whileTap={{ scale: 0.9 }}  
           >
             <NavLink
-              to="/Portfolio"
+              to="/my-Work"
               smooth
               duration={500}
               className="group text-white font-semibold w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-blue-500 to-black-500"
             >
-              Portfolio
+              My Work
               <span className="group-hover:rotate-90 ml-1 transition-all ease-in duration-300">
                 <MdOutlineKeyboardArrowRight size={25} />
               </span>
